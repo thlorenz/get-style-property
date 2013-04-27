@@ -2,6 +2,8 @@
 
 Gets the current value of a style property for a given DOM element.
 
+[![browser support](https://ci.testling.com/thlorenz/get-StyleProperty.png)](https://ci.testling.com/thlorenz/get-StyleProperty)
+
 ```js
 var foo              =  document.querySelector('.foo')
   , getStyleProperty =  require('get-styleProperty');
