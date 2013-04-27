@@ -26,8 +26,7 @@
     "node": ">=0.6"
   },
   "testling": {
-    "preprocess": "browserify ./test/*.js > ./test/bundle.js",
-    "html": "./test/index.html",
+    "files": "test/*.js",
     "browsers": [
       "ie/6..latest",
       "firefox/3..5",
