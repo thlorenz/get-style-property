@@ -44,11 +44,19 @@ test('get style property', function (t) {
   var foo = document.querySelector('.foo')
   
   t.ok(~['auto', '40px'].indexOf(getStyleProperty(foo ,  'height')), 'gets height')
-  t.equal(getStyleProperty(foo ,  'min-height')    , '40px' ,  'gets min-height')
-  t.equal(getStyleProperty(foo ,  'padding')       , '10px' ,  'gets padding')
-  t.equal(getStyleProperty(foo ,  'padding-left')  , '10px' ,  'gets padding-left')
-  t.equal(getStyleProperty(foo ,  'margin')        , '10px' ,  'gets margin')
-  t.equal(getStyleProperty(foo ,  'margin-left')   , '10px' ,  'gets margin-left')
-  t.equal(getStyleProperty(foo ,  'border-radius') , '5px'  ,  'gets border-radius')
+
+  t.equal(getStyleProperty(foo ,  'min-height')          ,  '40px' ,  'gets min-height')
+  t.equal(getStyleProperty(foo ,  'padding-left')        ,  '10px' ,  'gets padding-left')
+  t.equal(getStyleProperty(foo ,  'padding-right')       ,  '10px' ,  'gets padding-right')
+  t.equal(getStyleProperty(foo ,  'padding-top')         ,  '10px' ,  'gets padding-top')
+
+  t.equal(getStyleProperty(foo ,  'margin-right')        ,  '10px' ,  'gets margin-right')
+  t.equal(getStyleProperty(foo ,  'margin-left')         ,  '10px' ,  'gets margin-left')
+  t.equal(getStyleProperty(foo ,  'margin-top')          ,  '10px' ,  'gets margin-top')
+
+  t.equal(getStyleProperty(foo ,  'border-bottom-left-radius')  ,  '5px'  ,  'gets border-radius-left')
+  t.equal(getStyleProperty(foo ,  'border-bottom-right-radius') ,  '5px'  ,  'gets border-radius-right')
+  t.equal(getStyleProperty(foo ,  'border-top-left-radius')     ,  '5px'  ,  'gets border-radius-top')
+
   t.end();
 })
