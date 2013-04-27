@@ -24,5 +24,20 @@
   "license": "MIT",
   "engine": {
     "node": ">=0.6"
+  },
+  "testling": {
+    "files:" "test/*.js",
+    "html": "test/index.html",
+    "browsers": [
+      "ie/6..latest",
+      "firefox/3..5",
+      "firefox/19..nightly",
+      "chrome/4..7",
+      "chrome/24..canary",
+      "opera/10..next",
+      "safari/4..latest",
+      "iphone/6",
+      "ipad/6"
+    ]
   }
 }
