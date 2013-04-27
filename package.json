@@ -1,0 +1,26 @@
+{
+    "name" : "get-styleProperty",
+    "version" : "0.0.0",
+    "description" : "Gets the current value of a style property for a given DOM element.",
+    "main" : "get-styleProperty.js",
+    "scripts" : {
+        "test" : "node-trap test/*.js"
+    },
+    "repository" : {
+        "type" : "git",
+        "url" : "git://github.com/thlorenz/get-styleProperty.git"
+    },
+    "homepage" : "https://github.com/thlorenz/get-styleProperty",
+    "dependencies" : {
+    },
+    "devDependencies" : {
+    },
+    "keywords": [] ,
+    "author" : {
+        "name" : "Thorsten Lorenz",
+        "email" : "thlorenz@gmx.de",
+        "url" : "http://thlorenz.com"
+    },
+    "license" : "MIT",
+    "engine" : { "node" : ">=0.6" }
+}
