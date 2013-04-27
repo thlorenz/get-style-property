@@ -9,13 +9,14 @@ var test = require('tape')
   +function createFoo() {
     var elem = document.createElement('div')
     elem.setAttribute('class', 'foo')
+    elem.appendChild(document.createTextNode('some content for the get-StyleProperty test'));
     document.body.appendChild(elem)
   }()
 
   +function loadStyle() {
     var css = [
           '.foo {'
-        , '   min-height    :  20px;'
+        , '   min-height    :  40px;'
         , '   min-width     :  200px;'
         , '   padding       :  10px;'
         , '   margin        :  10px;'
@@ -42,8 +43,8 @@ var test = require('tape')
 test('get style property', function (t) {
   var foo = document.querySelector('.foo')
   
-  t.ok(~['auto', '20px'].indexOf(getStyleProperty(foo ,  'height')), 'gets height')
-  t.equal(getStyleProperty(foo ,  'min-height')    , '20px' ,  'gets min-height')
+  t.ok(~['auto', '40px'].indexOf(getStyleProperty(foo ,  'height')), 'gets height')
+  t.equal(getStyleProperty(foo ,  'min-height')    , '40px' ,  'gets min-height')
   t.equal(getStyleProperty(foo ,  'padding')       , '10px' ,  'gets padding')
   t.equal(getStyleProperty(foo ,  'padding-left')  , '10px' ,  'gets padding-left')
   t.equal(getStyleProperty(foo ,  'margin')        , '10px' ,  'gets margin')
