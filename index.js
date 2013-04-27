@@ -14,6 +14,6 @@ module.exports = function(el, propName) {
   return el.currentStyle
     ? el.currentStyle[propName]
     : window.getComputedStyle
-      ? document.defaultView.getComputedStyle(el, null).getpropNameertyValue(propName)
+      ? document.defaultView.getComputedStyle(el, null).getPropertyValue(propName)
       : null;
 };
