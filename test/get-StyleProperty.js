@@ -42,7 +42,7 @@ var test = require('tape')
 test('get style property', function (t) {
   var foo = document.querySelector('.foo')
   
-  t.equal(getStyleProperty(foo ,  'height')        , '20px' ,  'gets height')
+  t.ok(~['auto', '20px'].indexOf(getStyleProperty(foo ,  'height')), 'gets height')
   t.equal(getStyleProperty(foo ,  'min-height')    , '20px' ,  'gets min-height')
   t.equal(getStyleProperty(foo ,  'padding')       , '10px' ,  'gets padding')
   t.equal(getStyleProperty(foo ,  'padding-left')  , '10px' ,  'gets padding-left')
