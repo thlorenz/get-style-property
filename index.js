@@ -3,8 +3,7 @@
 
 /**
  * Gets the current value of a style property for a given DOM element.
- * 
- * @name exports
+ *
  * @function
  * @param el {Object} The DOM element.
  * @param propName {String} The name of the property.

@@ -1,8 +1,8 @@
 'use strict';
 /*jshint browser: true */
 
-var foo = document.querySelector('.foo')
-  , getStyleProperty = require('..');
+var foo              =  document.querySelector('.foo')
+  , getStyleProperty =  require('..');
 
 function log(s) {
   foo.appendChild(document.createTextNode(s));
