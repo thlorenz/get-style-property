@@ -1,6 +1,6 @@
 {
   "name": "get-styleProperty",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Gets the current value of a style property for a given DOM element.",
   "main": "get-styleProperty.js",
   "scripts": {
@@ -15,7 +15,14 @@
   "devDependencies": {
     "tape": "~0.3.3"
   },
-  "keywords": [ "style", "property", "browser", "browserify", "query", "dom" ],
+  "keywords": [
+    "style",
+    "property",
+    "browser",
+    "browserify",
+    "query",
+    "dom"
+  ],
   "author": {
     "name": "Thorsten Lorenz",
     "email": "thlorenz@gmx.de",
