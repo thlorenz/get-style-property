@@ -9,7 +9,7 @@ var test = require('tape')
   +function createFoo() {
     var elem = document.createElement('div')
     elem.setAttribute('class', 'foo')
-    elem.appendChild(document.createTextNode('some content for the get-StyleProperty test'));
+    elem.appendChild(document.createTextNode('some content for the get-style-property test'));
     document.body.appendChild(elem)
   }()
 

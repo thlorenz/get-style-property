@@ -1,4 +1,4 @@
-# get-styleProperty
+# get-style-property
 
 Gets the current value of a style property for a given DOM element.
 
@@ -6,7 +6,7 @@ Gets the current value of a style property for a given DOM element.
 
 ```js
 var foo              =  document.querySelector('.foo')
-  , getStyleProperty =  require('get-styleProperty');
+  , getStyleProperty =  require('get-style-property');
 
 // assuming we applied css: ".foo { min-height: 20px }"
 
