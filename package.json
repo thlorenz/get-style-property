@@ -15,7 +15,7 @@
   "devDependencies": {
     "tape": "~0.3.3"
   },
-  "keywords": [],
+  "keywords": [ "style", "property", "browser", "browserify", "query", "dom" ],
   "author": {
     "name": "Thorsten Lorenz",
     "email": "thlorenz@gmx.de",
